@@ -1,7 +1,7 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   padding: 6rem;
   min-height: 100vh;
@@ -92,6 +92,7 @@
   background: var(--primary-glow);
   width: 240px;
   height: 180px;
+  content: "";
   z-index: -1;
 }
 
@@ -141,6 +142,7 @@
 /* Inner Square */
 .thirteen::after {
   inset: 0;
+  content:"";
   padding: 1px;
   border-radius: var(--border-radius);
   background: linear-gradient(
